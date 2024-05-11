@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html lang="pt-br" dir="ltr">
+
+    <head>
+        <meta cgarset="utf-8">
+        <title>Corretor de Redação ENEM - CorrigeAI</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />    </head>
+        <script src="script.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js" integrity="sha512-pmjEJQ7CveksANaAKdCJZMig7eAcCFFzE1b5XnlnxdB/vU3AOStJ5SF7w4tFuqskuU31ETnAaWTYRQOYg2WHKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="importmap">
+            {
+              "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+              }
+            }
+          </script>
+    <body>
+        <button class="chatbot-toggler">
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+
+        </button>
+        <div class="class corpo">
+            <div class="container">
+                <header>
+                    <h1>CorrigeAI - Seu Corretor de Redação Inteligente</h1>
+                    <p>Melhore sua redação do ENEM com a ajuda da inteligência artificial.</p>
+                </header>
+        
+                <main>
+                    <section class="tutorial">
+                        <h2>Como funciona o CorrigeAI?</h2>
+                        <ol>
+                            <li><strong>Escreva sua redação:</strong> Insira o texto da sua redação na caixa de texto presente no botão verde.</li>
+                            <li><strong>Envie para análise:</strong> Clique no botão de envio para enviar o texto para análise da CorrigeAI.</li>
+                            <li><strong>Receba a análise:</strong> O CorrigeAI analisará sua redação e fornecerá feedback sobre aspectos como coerência, coesão, desenvolvimento de argumentos e uso da linguagem.</li>
+                            <li><strong>Aprimore sua redação:</strong> Use o feedback do CorrigeAI para identificar áreas para melhoria e revise sua redação.</li>
+                        </ol>
+                    </section>
+                </main>
+                
+            </div>
+            <div class="explicacoes-container">
+                <span id="send-btn" class="material-symbols-outlined">Priority_High</span>
+                <h2>Importante: Divergências e Observações</h2>
+                <p>
+                  É importante ressaltar que, embora este programa utilize técnicas avançadas de processamento de linguagem natural para analisar e fornecer sugestões para sua redação do ENEM, <strong>os resultados podem apresentar divergências da avaliação oficial</strong>.
+                </p>
+                <p>
+                  O objetivo principal do programa é oferecer um <strong>auxílio na revisão e aprimoramento da sua redação</strong>, fornecendo insights sobre aspectos como estrutura, coesão, coerência, desenvolvimento de argumentos e uso da linguagem.
+                </p>
+                <p>
+                  Lembre-se que a avaliação final do ENEM é realizada por <strong>examinadores humanos</strong>, que possuem critérios específicos e uma ampla compreensão da língua portuguesa.
+                </p>
+                <p>
+                  Utilize este programa como uma <strong>ferramenta de apoio e aprendizado</strong>, buscando aprimorar suas habilidades de escrita e aumentar suas chances de sucesso no ENEM.
+                </p>
+              </div>       
+        <div class="class chatbot">
+            <header>
+                <h2>Corretor Redação Enem</h2>
+                <span class="material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chat esquerda">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Olá! <br> Sou o CorrigeAI, uma I.A. feita para correção de redações, insira a sua para começarmos! :).</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Insira sua Redação" required></textarea>
+                <span id="send-btn" class="material-symbols-outlined">send</span>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 CorrigeAI. Todos os direitos reservados.</p>
+        </footer> 
+    </body>
+</html>
