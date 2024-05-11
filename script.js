@@ -3,6 +3,9 @@ const sendChatBtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 
+var mykey = config.MY_KEY;
+var secretkey = config.SECRET_KEY;
+
 
 let userMessage;
 
@@ -45,7 +48,7 @@ const handleSendChat = async () => {
     // **Import and Initialize GoogleGenerativeAI (outside handleChat for efficiency):**
     const { GoogleGenerativeAI } = await import("@google/generative-ai"); // Async import for efficiency
 
-    const API_KEY = "AIzaSyA-ZAF-i-FeSt4sUt9baVQfgFS64qB39S8"; // Replace with your Google Generative AI API key
+    const API_KEY = "mykey"; // Replace with your Google Generative AI API key
 
     const genAI = new GoogleGenerativeAI(API_KEY);
 
