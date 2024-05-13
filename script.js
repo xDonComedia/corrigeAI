@@ -48,7 +48,7 @@ const handleSendChat = async () => {
     // **Import and Initialize GoogleGenerativeAI (outside handleChat for efficiency):**
     const { GoogleGenerativeAI } = await import("@google/generative-ai"); // Async import for efficiency
 
-    const API_KEY = "mykey"; // Replace with your Google Generative AI API key
+    const API_KEY = "AIzaSyC7fsXCtmSAVXdvtXZc7v91XzISYTXkTj4"; // Replace with your Google Generative AI API key
 
     const genAI = new GoogleGenerativeAI(API_KEY);
 
